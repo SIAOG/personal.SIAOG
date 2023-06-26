@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="port.css" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 10px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+body{
+    background-image: url(https://t3.ftcdn.net/jpg/05/66/08/08/360_F_566080805_0dn6puk0HIff3qP3anTK5LJ7B0FF7Do6.jpg);
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="profile.html">My profile</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+        </ul>
+        <a href="#" class="button">Help</a>
+
+        </nav>
+
+<h2 style="text-align: center; color:aqua;font-family:Verdana, Geneva, Tahoma, sans-serif;">Welcome To my Home Page</h2>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Front-End-vs-Back-End-vs-Full-Stack-Development.jpg" style="width:100%">
+  <div class="text">Saves Time and Money</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="full-stack-devlopment-min.png" style="width:100%">
+  <div class="text">Complete Ownership</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Full_stack_developer-1-1.webp" style="width:100%">
+  <div class="text">Greater opportunity with more learning</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+<fieldset style=" color: aliceblue; font-family:Georgia, 'Times New Roman', Times, serif;">
+    <legend id="About">About Me</legend>
+    <p style="color:aliceblue; font-size: xx-large; text-align: center;font-family: 'Times New Roman', Times, serif;">Hey There, Myself Manoj Kumar i was born and raised in chennai and also currently living in chennai<br>
+        I have completed my under graduation in B.com specialized in corporate and 
+        i've always wanted to work in technical field rather than non-technical field<br>
+        I always trust God no matted what i'm going through Because He always got my back as the verse in The Bible <br>
+        <span style="color:cornsilk;">Jeremiah chapter-29 verse-11</span><br><span style="color: greenyellow;">
+        For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, 
+        plans to give you hope and a future.</span></p> 
+        </fieldset><br><hr><br>
+<footer>
+    <p>Copyright 2022 All rights reserved<br>
+  </footer>
+
+</body>
+</html> 
